@@ -44,6 +44,7 @@ export const PROJECTS = [
     image: project1,
     description:
       "A fully functional real-time chat application with features like instant messaging, online status and user authentication.",
+    link:"https://mern-chat-app-1-o8e1.onrender.com",  
     technologies: ["React", "Node.js","Express.js", "MongoDB","Socket.io"],
   },
   {
@@ -51,6 +52,7 @@ export const PROJECTS = [
     image: project2,
     description:
       "An application for money transfer with features like secure user authentication, seamless peer-to-peer transactions. It includes MongoDB transactions for ensuring data consistency.",
+    link:"https://github.com/ManiChaturvedi/Transact-Ease",  
     technologies: ["React", "Node.js","Express.js", "MongoDB"],
   },
   {
@@ -65,6 +67,7 @@ export const PROJECTS = [
     image: project4,
     description:
       "A loan status prediction system using SVM (Support Vector Machine) to analyze financial data and predict loan approval chances with high accuracy.",
+    link:"https://github.com/ManiChaturvedi/Loan-Prediction-Model",  
     technologies: ["Python", "Pandas", "Numpy", "Streamlit", "Scikit-learn", "Google Colab"],
   },
 ];
