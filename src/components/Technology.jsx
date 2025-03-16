@@ -76,14 +76,14 @@ const Technology = () => {
           initial='initial'
           animate='animate'
           className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiTailwindcss className="text-4xl text-black-500" />
+          <SiTailwindcss className="text-4xl text-blue-500" />
         </motion.div>
         <motion.div 
           variants={iconvariants(2.8)}
           initial='initial'
           animate='animate'
           className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiTypescript className="text-4xl text-black-500" />
+          <SiTypescript className="text-4xl text-blue-500" />
         </motion.div>
         <motion.div 
           variants={iconvariants(5.2)}
@@ -97,7 +97,7 @@ const Technology = () => {
           initial='initial'
           animate='animate'
           className="rounded-2xl border-4 border-neutral-800 p-4">
-          <SiMysql className="text-4xl text-black-500" />
+          <SiMysql className="text-4xl text-blue-500" />
         </motion.div>
       </motion.div>
     </div>
