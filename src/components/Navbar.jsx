@@ -1,20 +1,77 @@
-import React from 'react'
-import logo from '../assets/kevinRushLogo.png'
-import { FaLinkedin } from 'react-icons/fa6'
-import { FaGithub } from 'react-icons/fa6'
-import { FaSquareXTwitter } from 'react-icons/fa6'
-import { FaInstagram } from 'react-icons/fa6'
-import {SiLeetcode} from 'react-icons/si'
+import React, { useState, useEffect, useRef } from 'react'
+import { FaLinkedin, FaGithub, FaSquareXTwitter, FaInstagram, FaBars } from 'react-icons/fa6'
+import { SiLeetcode } from 'react-icons/si'
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current && 
+        !dropdownRef.current.contains(event.target) &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false);
+    }
+  };
+
   return (
     <nav className='mb-20 flex items-center justify-between py-6'>
-      <div className='flex flex-shrink-0 items-center'>
-        <span className='ml-2 w-10 text-3xl text-white flex justify-end'>M</span>
-        <span className='ml-1 w-10 text-3xl text-white'>r</span>
+      <div className='relative'>
+        <button
+          ref={buttonRef}
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center gap-2 text-white hover:text-gray-400"
+        >
+          <FaBars className="text-2xl" />
+        </button>
 
+        {isOpen && (
+          <div ref={dropdownRef} className="absolute left-0 mt-2 w-48 rounded-md bg-neutral-800 shadow-lg py-2 z-50">
+            <button
+              onClick={() => scrollToSection('home')}
+              className="block w-full text-left px-4 py-2 text-white hover:bg-purple-500 transition-colors"
+            >
+              Home
+            </button>
+            <button
+              onClick={() => scrollToSection('about')}
+              className="block w-full text-left px-4 py-2 text-white hover:bg-purple-500 transition-colors"
+            >
+              About
+            </button>
+            <button
+              onClick={() => scrollToSection('projects')}
+              className="block w-full text-left px-4 py-2 text-white hover:bg-purple-500 transition-colors"
+            >
+              Projects
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="block w-full text-left px-4 py-2 text-white hover:bg-purple-500 transition-colors"
+            >
+              Contact
+            </button>
+          </div>
+        )}
       </div>
-      <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
+
+      <div className='flex items-center justify-center gap-4 text-2xl'>
         <a href="https://leetcode.com/u/manichaturvedi17_/" target="_blank" rel="noopener noreferrer">
           <SiLeetcode className="text-white hover:text-gray-400"/>
         </a>
