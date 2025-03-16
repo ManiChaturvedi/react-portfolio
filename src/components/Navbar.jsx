@@ -10,7 +10,9 @@ const Navbar = () => {
   return (
     <nav className='mb-20 flex items-center justify-between py-6'>
       <div className='flex flex-shrink-0 items-center'>
-        <img className="mx-2 w-10" src={logo} alt=""/>
+        <span className='ml-2 w-10 text-3xl text-white flex justify-end'>M</span>
+        <span className='ml-1 w-10 text-3xl text-white'>r</span>
+
       </div>
       <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
         <a href="https://leetcode.com/u/manichaturvedi17_/" target="_blank" rel="noopener noreferrer">
