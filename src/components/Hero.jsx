@@ -47,7 +47,9 @@ const Hero = () => {
                 initial={{x:100,opacity:0}}
                 animate={{x:0,opacity:1}}
                 transition={{delay:1.2,duration:1}}
-                src={"/kevinRushProfile.jpg"} alt='Kevin Rush'/>
+                src={"/ManiProfile.png"} 
+                alt='Profile Picture' 
+                className="rounded-full border-4 border-purple-500 shadow-xl w-80 h-80 md:w-96 md:h-96 object-cover hover:border-pink-500 transition-colors duration-300" />
             </div>
         </div>    
     </div>
