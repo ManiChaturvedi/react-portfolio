@@ -31,18 +31,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='mb-20 flex items-center justify-between py-6'>
-      <div className='relative'>
+    <nav className='mb-20 flex items-center justify-between py-6 px-4'>
+      <div className='relative flex items-center'>
         <button
           ref={buttonRef}
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-2 text-white hover:text-gray-400"
+          className="flex items-center gap-2 text-white hover:text-gray-400 p-2"
         >
           <FaBars className="text-2xl" />
         </button>
 
         {isOpen && (
-          <div ref={dropdownRef} className="absolute left-0 mt-2 w-48 rounded-md bg-neutral-800 shadow-lg py-2 z-50">
+          <div ref={dropdownRef} className="absolute left-0 top-full mt-2 w-48 rounded-md bg-neutral-800 shadow-lg py-2 z-50">
             <button
               onClick={() => scrollToSection('home')}
               className="block w-full text-left px-4 py-2 text-white hover:bg-purple-500 transition-colors"
@@ -71,7 +71,7 @@ const Navbar = () => {
         )}
       </div>
 
-      <div className='flex items-center justify-center gap-4 text-2xl'>
+      <div className='flex items-center gap-4 text-2xl'>
         <a href="https://leetcode.com/u/manichaturvedi17_/" target="_blank" rel="noopener noreferrer">
           <SiLeetcode className="text-white hover:text-gray-400"/>
         </a>
