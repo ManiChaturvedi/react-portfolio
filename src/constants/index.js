@@ -3,7 +3,7 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full-stack developer with a strong focus on building scalable and high-performance web applications. With five years of hands-on experience, I have mastered front-end technologies like React.js, along with back-end technologies such as Node.js, Express.js, PostgreSQL and MongoDB. I thrive on creating innovative solutions that enhance user experiences and drive business success.`;
+export const HERO_CONTENT = `I am a passionate full-stack developer with a strong focus on building scalable and high-performance web applications.I have mastered front-end technologies like React.js, along with back-end technologies such as Node.js, Express.js, PostgreSQL and MongoDB. I thrive on creating innovative solutions that enhance user experiences and drive business success.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full-stack developer passionate about building efficient, user-friendly web applications. I have worked with technologies like React.js, Node.js, Prisma, PostgreSQL, MongoDB and AWS, constantly exploring new tools and best practices. My journey in web development started with a deep curiosity for how things work, evolving into a commitment to learning, problem-solving, and creating impactful digital solutions. I actively practice problem-solving on platforms like LeetCode and have a strong foundation in computer science fundamentals, including DBMS, Operating Systems, Computer Networks, and Object-Oriented Programming.`;
 
