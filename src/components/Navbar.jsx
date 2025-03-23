@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { FaLinkedin, FaGithub, FaSquareXTwitter, FaInstagram, FaBars } from 'react-icons/fa6'
+import { FaLinkedin, FaGithub, FaSquareXTwitter, FaInstagram, FaBars, FaFile } from 'react-icons/fa6'
 import { SiLeetcode } from 'react-icons/si'
 
 const Navbar = () => {
@@ -81,11 +81,18 @@ const Navbar = () => {
         <a href="https://github.com/ManiChaturvedi" target="_blank" rel="noopener noreferrer">
           <FaGithub className="text-white hover:text-gray-400"/>
         </a>
-        <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
-          <FaSquareXTwitter className="text-white hover:text-gray-400"/>
-        </a>
         <a href="https://www.instagram.com/chaturvedi_17_/" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-white hover:text-gray-400"/>
+        </a>
+        
+        {/* Resume Button */}
+        <a 
+          href="/ManiResume.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-white hover:text-gray-400"
+        >
+          <FaFile className="text-lg" />
         </a>
       </div>
     </nav>
