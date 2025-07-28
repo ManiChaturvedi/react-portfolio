@@ -1,12 +1,60 @@
-# React + Vite
+# Mani Chaturvedi Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the source code for [mani-chaturvedi.me](https://mani-chaturvedi.me), a personal portfolio website built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive design
+- Animated hero section
+- Projects showcase
+- Contact form with EmailJS integration
+- Smooth scrolling navigation with dropdown menu
+- Social media links
+- Downloadable resume
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v16 or above)
+- npm
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Add your resume:**
+   - Place your `Resume Pdf & Profile pic` in the `public` folder.
+
+4. **Configure EmailJS (for contact form):**
+   - Create a free account at [EmailJS](https://www.emailjs.com/)
+   - Update your service ID, template ID, and public key in `src/components/Contact.jsx`
+
+### Running Locally
+
+```bash
+npm run dev
+```
+
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Deployment
+
+You can deploy this site to Vercel, Netlify, or any static hosting provider.
+
+## Live Demo
+
+👉 [https://mani-chaturvedi.me](https://mani-chaturvedi.me)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE)
