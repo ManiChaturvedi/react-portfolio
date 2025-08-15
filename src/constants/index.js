@@ -41,7 +41,7 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "AI Meeting Summarizer",
-    image: project2,
+    image: project1,
     description:
       "An application that utilizes AI to summarize meeting discussions and action items, enhancing productivity and collaboration.",
     link:"https://melodious-profiterole-c3de27.netlify.app/",  
@@ -49,7 +49,7 @@ export const PROJECTS = [
   },
   {
     title: "Real-Time Chat App",
-    image: project1,
+    image: project2,
     description:
       "A fully functional real-time chat application with features like instant messaging, online status and user authentication.",
     link:"https://mern-chat-app-1-o8e1.onrender.com",  
@@ -57,18 +57,11 @@ export const PROJECTS = [
   },
   {
     title: "Transact Ease",
-    image: project2,
+    image: project3,
     description:
       "An application for money transfer with features like secure user authentication, seamless peer-to-peer transactions. It includes MongoDB transactions for ensuring data consistency.",
     link:"https://clinquant-cupcake-5e0704.netlify.app/",  
     technologies: ["React", "Node.js","Express.js", "MongoDB"],
-  },
-  {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
   },
   {
     title: "Loan Status Prediction System",
