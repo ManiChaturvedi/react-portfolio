@@ -1,6 +1,6 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `I am a passionate full-stack developer with a strong focus on building scalable and high-performance web applications.I have mastered front-end technologies like React.js, along with back-end technologies such as Node.js, Express.js, PostgreSQL and MongoDB. I thrive on creating innovative solutions that enhance user experiences and drive business success.`;
@@ -40,6 +40,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "AI Meeting Summarizer",
+    image: project2,
+    description:
+      "An application that utilizes AI to summarize meeting discussions and action items, enhancing productivity and collaboration.",
+    link:"https://melodious-profiterole-c3de27.netlify.app/",  
+    technologies: ["React", "Node.js","Express.js", "Gemini","AssemblyAI"],
+  },
+  {
     title: "Real-Time Chat App",
     image: project1,
     description:
@@ -52,7 +60,7 @@ export const PROJECTS = [
     image: project2,
     description:
       "An application for money transfer with features like secure user authentication, seamless peer-to-peer transactions. It includes MongoDB transactions for ensuring data consistency.",
-    link:"https://github.com/ManiChaturvedi/Transact-Ease",  
+    link:"https://clinquant-cupcake-5e0704.netlify.app/",  
     technologies: ["React", "Node.js","Express.js", "MongoDB"],
   },
   {
